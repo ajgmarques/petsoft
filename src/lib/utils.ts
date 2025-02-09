@@ -11,7 +11,7 @@ export async function sleep(ms: number) {
 
 export function differenceInDays(date: Date) {
   if (!date) {
-    return;
+    return 1;
   }
   const dateField = new Date(date);
   const today = new Date();

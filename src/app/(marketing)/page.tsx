@@ -8,10 +8,10 @@ export default function Home() {
     <main
       className='
       flex flex-col xl:flex-row items-center justify-center gap-10
-      bg-[#5dc9a8] min-h-screen'
+      bg-[#5dc9a8] min-h-screen max-sm:px-3'
     >
       <Image
-        className='rounded-md'
+        className='rounded-lg'
         src={'/petsoft-preview.png'}
         alt='PetSoft preview'
         width={519}
@@ -19,11 +19,15 @@ export default function Home() {
       />
       <div>
         <Logo />
-        <h1 className='text-5xl font-semibold my-6 max-w-[500px]'>
+
+        <h1
+          className='xl:text-5xl text-5xl max-sm:text-3xl
+          font-semibold my-6 max-w-[500px]'
+        >
           Manage your <span className='font-extrabold'>pet daycare</span> with
           ease
         </h1>
-        <p className='text-2xl font-medium max-w-[600px]'>
+        <p className='text-2xl max-sm:text-xl font-medium max-w-[600px]'>
           Use PetSoft to easily keep track of pets under your care. Get lifetime
           access for $299
         </p>

@@ -28,9 +28,9 @@ export default function AppHeader() {
                 <Link
                   href={route.path}
                   className={cn(
-                    'text-white/70 rounded-sm px-2 py-1 hover:text-white focus:text-white transition',
+                    'text-white/70 rounded-full px-2 py-1 hover:text-white focus:text-white transition',
                     {
-                      'bg-black/10 text-white': route.path === activePathname,
+                      'bg-black/20 text-white': route.path === activePathname,
                     }
                   )}
                 >
